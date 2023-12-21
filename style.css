@@ -1,6 +1,524 @@
-#gift{
-    height: 80px;
-    width: 80px;
-    background-color: black;
+#gift {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    animation: fallAndMove 4s ease-in-out;
+}
+#gift img {
+    height: 100%;
+    width: 100%;
+}
+
+.new-element {
+    width: 20px;
+    height: 20px;
+    background-color: red;
     position: absolute;
 }
+body{
+    width: 100vw; /* 100% chiều rộng của viewport */
+    height: 100vh; /* 100% chiều cao của viewport */
+    background-image: url('/Christmas-iPhone-Backgrounds-Desktop.jpg'); /* Đường dẫn đến ảnh của bạn */
+    background-size: cover; /* Phủ toàn bộ phần hiển thị */
+    background-position: center; /* Đặt ảnh vào giữa div */
+    background-repeat: no-repeat; /* Không lặp lại ảnh */
+}
+@keyframes fallAndMove {
+    0% {
+        transform: translateX(0px) translateY(-100px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(100px) translateY(200px) rotate(90deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+}
+.text-bind{
+    color: white;
+    display: none;
+}
+.pic1{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 320px;
+    left: 180px;
+}
+.pic2{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 290px;
+    left: 145px;
+}
+ .pic3{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 280px;
+    left: 110px;
+}
+.pic4{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 285px;
+    left: 75px;
+}
+
+.pic5{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+}
+.pic6{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 350px;
+    left: 25px;
+}
+.pic7{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 350px;
+    left: 60px;
+}
+.pic8{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 340px;
+    left: 85px;
+}
+.pic9{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 335px;
+    left: 110px;
+}
+.pic10{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 335px;
+    left: 145px;
+}
+.pic11{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 365px;
+    left: 180px;
+}
+.pic12{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 390px;
+    left: 145px;
+}
+.pic13{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 390px;
+    left: 110px;
+}
+.pic14{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 395px;
+    left: 85px;
+}
+.pic15{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 405px;
+    left: 50px;
+}
+.pic16{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 395px;
+    left: 30px;
+}
+.pic17{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 450px;
+    left: 55px;
+}
+.pic18{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 450px;
+    left: 90px;
+}
+.pic19{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 440px;
+    left: 125px;
+}
+.pic20{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 420px;
+    left: 160px;
+}
+.pic21{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 420px;
+    left: 195px;
+}
+.pic22{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+.pic23{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 490px;
+    left: 135px;
+}
+.pic24{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 470px;
+    left: 170px;
+}
+.pic25{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 540px;
+    left: 135px;
+}
+.pic26{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 520px;
+    left: 170px;
+}
+.pic27{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 570px;
+    left: 170px;
+}
+.pic28{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 320px;
+    left: 214px;
+}
+.pic29{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 290px;
+    left: 248px;
+}
+.pic30{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 290px;
+    left: 248px;
+}
+.pic31{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 280px;
+    left: 283px;
+}
+.pic32{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 280px;
+    left: 318px;
+}
+.pic33{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 290px;
+    left: 350px;
+}
+.pic34{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 320px;
+    left: 373px;
+}
+.pic35{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 340px;
+    left: 340px;
+}
+.pic36{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 335px;
+    left: 305px;
+}
+.pic37{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 340px;
+    left: 270px;
+}
+.pic38{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 340px;
+    left: 235px;
+}
+.pic39{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 370px;
+    left: 200px;
+}
+.pic40{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 390px;
+    left: 235px;
+}
+.pic41{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 390px;
+    left: 270px;
+}
+.pic42{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 390px;
+    left: 305px;
+}
+.pic43{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 390px;
+    left: 340px;
+}
+.pic44{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 370px;
+    left: 375px;
+}
+.pic45{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 420px;
+    left: 365px;
+}
+.pic46{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 440px;
+    left: 330px;
+}
+.pic47{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 440px;
+    left: 295px;
+}
+.pic48{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 440px;
+    left: 260px;
+}
+.pic49{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 440px;
+    left: 225px;
+}
+.pic50{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 470px;
+    left: 195px;
+}
+.pic51{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 520px;
+    left: 195px;
+}
+.pic52{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 570px;
+    left: 195px;
+}
+.pic53{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 490px;
+    left: 230px;
+}
+.pic54{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 490px;
+    left: 230px;
+}
+.pic55{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 490px;
+    left: 265px;
+}
+.pic56{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 490px;
+    left: 290px;
+}
+.pic57{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 480px;
+    left: 310px;
+}
+.pic58{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 540px;
+    left: 230px;
+}
+.pic59{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 540px;
+    left: 265px;
+}
+.pic60{
+    height: 55px;
+    width: 35px;
+    background-color: black;
+    position: absolute;
+    top: 570px;
+    left: 225px;
+}
+
