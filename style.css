@@ -40,6 +40,9 @@ body{
     color: white;
     display: none;
 }
+.move-to-target{
+    transform: translate(100px, 50px);
+}
 .pic1{
     height: 55px;
     width: 35px;
