@@ -2,7 +2,7 @@
     height: 60px;
     width: 60px;
     position: absolute;
-    animation: fallAndMove 4s ease-in-out;
+    animation: fallAndMove 2s ease-in-out forwards;
 }
 #gift img {
     height: 100%;
@@ -25,15 +25,20 @@ body{
 }
 @keyframes fallAndMove {
     0% {
-        transform: translateX(0px) translateY(-100px) rotate(0deg);
-    }
-
-    50% {
-        transform: translateX(100px) translateY(200px) rotate(90deg);
+        transform: translateX(0px) rotate(0deg);
     }
 
     100% {
-        transform: translateY(0) rotate(0deg);
+        transform: translateX(200px)  rotate(90deg);
+    }
+}
+.move-to-heart{
+    animation: moveToHeart 2s forwards;
+}
+@keyframes moveToHeart{
+    to {
+        left: 200px;
+        top: 450px;
     }
 }
 .text-bind{
@@ -524,4 +529,3 @@ body{
     top: 570px;
     left: 225px;
 }
-
