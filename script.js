@@ -4,13 +4,13 @@ function giftFall(x) {
 var gift = document.getElementById('gift');
 var x = 0, y = 0;
 var isStopMoving = false;
+const movingElement = document.getElementById('gift');
 document.addEventListener('DOMContentLoaded', function () {
-    const movingElement = document.getElementById('gift');
     var container = document.body;
     var isFalling = true;
-    var centerX = 150;
-    var centerY = 550;
-    var radius = 100;
+    var centerX = 0;
+    var centerY = 700;
+    var radius = 120;
     var speed = 0.002;
     
     // Set initial position
@@ -20,8 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         if (isFalling) {
             var currentTop = parseInt(getComputedStyle(movingElement).top);
-            if (currentTop < 500) {
-                movingElement.style.top = (currentTop + 2) + 'px';
+            var currentLeft = parseInt(getComputedStyle(movingElement).left);
+            if (currentTop < 700) {
+                movingElement.style.top = (currentTop + 7) + 'px';
+                movingElement.style.left = currentLeft + 'px';
             } else {
                 isFalling = false;
             }
@@ -37,11 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(moveElementInCircle);
     }
     movingElement.addEventListener('click', function () {
-        setInterval(appearGift, 200);
+        isStopMoving = true;
+        setInterval(appearGift, 800);
+        setInterval(moveDiv, 200);
         setTimeout(() => {
             hideGift();
         }, 12000);
-        isStopMoving = true;
     });
 
     moveElementInCircle();
@@ -61,6 +64,15 @@ function hideGift(){
     // requestAnimationFrame(appearGift);
 }
 
-ift.addEventListener('mousedown', function () {
-
-});
+function moveDiv(){
+    var el = document.createElement('div');
+    const rect = movingElement.getBoundingClientRect();
+    el.style.position = 'absolute';
+    el.style.left = rect.left + 'px';
+    el.style.top = rect.top +'px';
+    el.style.backgroundColor = 'black';
+    el.style.width = '20px';
+    el.style.height = '20px';
+    el.classList.add('move-to-heart');
+    document.body.appendChild(el);
+}
